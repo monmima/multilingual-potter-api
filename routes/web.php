@@ -21,8 +21,8 @@ Route::get('/', function () {
 //     return view('test');
 // });
 
-Route::get('/test2', 'App\Http\Controllers\TestModelController@index');
-Route::get('/testx', 'App\Http\Controllers\TestModelController@index');
+Route::get('/characters', 'App\Http\Controllers\CharacterController@index');
+Route::get('/character/{id}', "App\Http\Controllers\CharacterController@edit");
 
 Route::get('/test', function () {
     $string = "This is my super string!";
